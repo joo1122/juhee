@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; 
+            padding: 0;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            float: left;
+            box-sizing: border-box;
+            margin: 10px;
+            /* 공통인거 묶어주기 */
+        }
+        .SCROLL-XY{
+
+            overflow: scroll;
+        }
+        .SCROLL-X{
+        
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        .SCROLL-Y{
+           
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="box SCROLL-XY">
+        <!-- 클래스 안에 발현되야 하는거 뛰어쓰기하고 두개 넣기 -->
+        <h4>SCROLL-X,Y</h4>
+        <p><img src="../img/174C5A494FBF129A32.jpg" alt="고양이"></p>
+    </div>
+    <div class="box SCROLL-X">
+        <h4>SCROLL-X</h4>
+        <p><img src="../img/DA4d4sYUIAATSM8.jpg" alt=""></p>
+    </div>
+    <div class="box SCROLL-Y">
+        <h4>SCROLL-Y</h4>
+        <P><img src="../img/DA4d4sYUIAATSM8.jpg" alt=""></P>
+    </div>
+</body>
+</html>
